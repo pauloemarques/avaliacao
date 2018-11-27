@@ -1,0 +1,8 @@
+<jboss-web>
+	<context-root>avaliacao</context-root>
+	<resource-ref>
+		<res-ref-name>jdbc/avaliacao</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:jboss/datasources/AvaliacaoDS</jndi-name>
+	</resource-ref>
+</jboss-web>
