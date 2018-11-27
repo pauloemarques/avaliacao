@@ -1,0 +1,12 @@
+CREATE TABLE social_media(
+user_id character varying(45) NOT NULL,
+social_profile_id character varying(45),
+social_provider character varying(45),
+authenticate boolean NOT NULL DEFAULT false
+)
+
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE social_media
+  OWNER TO postgres;

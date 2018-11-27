@@ -1,0 +1,13 @@
+CREATE TABLE countries(
+cd_id bigserial NOT NULL,
+country_code character varying(2),
+country_name_br character varying(255),
+country_name_en character varying(45),
+CONSTRAINT countries_pkey PRIMARY KEY (cd_id)
+)
+
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE countries
+  OWNER TO postgres;
